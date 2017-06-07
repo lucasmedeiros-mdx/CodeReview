@@ -40,7 +40,7 @@ The general rule to follow is "use Visual Studio defaults".
 6. **DO** always specify the visibility, even if it's the default (i.e. `private string _foo` not `string _foo`). Visibility should be the first modifier (i.e. `public abstract` not `abstract public`).
 7. **DO** specify Namespace imports at the top of the file, outside of namespace declarations and sorted alphabetically. Per [StyleCop rule](http://stylecop.soyuz5.com/SA1210.html), *System* namespaces should be placed before other namespaces.
 8. **DO NOT** use more than one empty line at any time. For example, do not have two blank lines between members of a type.
-9. **DO NOT** use extra spaces. For example avoid if (someVar == 0)..., where the dots mark the spurious extra spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
-10. **DO** use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`) for both type references as well as method calls (i.e. int.Parse instead of Int32.Parse)
-11. **DO** use nameof(...) instead of "..." whenever possible and relevant.
+9. **DO NOT** use extra spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious extra spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
+10. **DO** use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`) for both type references as well as method calls (i.e. `int.Parse` instead of `Int32.Parse`)
+11. **DO** use `nameof(...)` instead of `"..."` whenever possible and relevant.
 12. **DO** use the `var` when the variable type can be implied (`var name = "Lucas"` instead of `string name = "Lucas"` and `var names = new List<string>()` instead of `List<string> names = new List<string>()`)
