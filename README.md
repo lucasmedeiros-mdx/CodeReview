@@ -91,4 +91,14 @@ Within each of these groups order by access: `public, internal, protected intern
 
 ## Code Review Checklist
 
-- [ ] ** DO ** ensure 
+- [ ] **DOES** it follow [Pull Request](#pull-requests) standards.
+- [ ] **DOES** it follow [Commit Message's](#commit-messages) convention.
+- [ ] **DOES** the implementation cover the TFS acceptance criteria or fixes the issue.
+- [ ] **DOES** the code is compliant with security tools (such as Fortify).
+- [ ] **DOES** it follow [C# Coding Style](#c-coding-style) guidelines.
+
+### How to not review
+- **DO NOT** get emotional.
+- **DO NOT** focus on blame.
+- **DO NOT** focus on how you would have coded it, instead verify if the code is maintanable/scalable and proficient.
+- **AVOID** redesigning the code. Unless that's the specific goal of the PR, the code review is about finding nuggets of information in the code, not about revisiting design decisions.
