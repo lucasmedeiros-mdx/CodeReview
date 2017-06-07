@@ -86,3 +86,9 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **CONSIDER** using object and collection initializer over separated statements.
 1. **AVOID** static classes. With the exception of extension method containers, static classes very often lead to badly designed code. They're also very difficult to test in isolation.
 1. **AVOID** using named arguments. If you need named arguments to improve the readability of the call to a method, that method is probably doing too much and should be refactored. The exception is when calling a method of some code base you don't control that has a `bool` parameter.
+1. **AVOID** code duplication. If the code is used in more than one place, it should probably be extracted to a common place.
+
+
+## Code Review Checklist
+
+- [ ] ** DO ** ensure 
