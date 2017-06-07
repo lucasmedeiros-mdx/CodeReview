@@ -43,6 +43,13 @@ The general rule to follow is "use Visual Studio defaults".
 1. **DO NOT** use extra spaces. For example avoid `if (someVar == 0)...`, where the dots mark the spurious extra spaces. Consider enabling "View White Space (Ctrl+E, S)" if using Visual Studio, to aid detection.
 1. **DO NOT** comment out code. It's the tracking system responsibility to keep track of the changes.
 1. **AVOID** using *regions*.
+1. **DO** place the members in (well-defined order)[http://stylecop.soyuz5.com/Ordering%20Rules.html]. 
+   1. Constant fields / Fields
+   1. Constructors / Destructors
+   1. Delegates / Events
+   1. Properties
+   1. Methods
+Within each of these groups order by access: `public, internal, protected internal, protected, private`. Within each of the    access groups, order by `static`, then `non-static`.
 
 ### Naming Guidelines
 
@@ -72,9 +79,9 @@ The general rule to follow is "use Visual Studio defaults".
 1. **DO NOT** use this. unless absolutely necessary.
 1. **DO NOT** use marker interfaces (interfaces with no members). If you need to mark a class as having a specific characteristic (marker), in general, use a custom attribute rather than an interface.
 1. **DO NOT** combine many vaguely related members on the same interface. Separate the members by responsibility, so that callers only need to call or implement the interface related to a particular task.
-1. **CONSIDER** defining a struct instead of a class if instances of the type are small and commonly short-lived or are commonly embedded in other objects. `Structs` should be immutable and should not be boxed frequently.
 1. **DO NOT** swallow errors by catching generic exception. Unless you're in a last-change exception handler, avoid catching non specific exception such as `Exception` or `SystemException`.
 1. **DO NOT** make explicit comparisons to *true* or *false*.
+1. **CONSIDER** defining a struct instead of a class if instances of the type are small and commonly short-lived or are commonly embedded in other objects. `Structs` should be immutable and should not be boxed frequently.
 1. **CONSIDER** using object and collection initializer over separated statements.
 1. **AVOID** static classes. With the exception of extension method containers, static classes very often lead to badly designed code. They're also very difficult to test in isolation.
 1. **AVOID** using named arguments. If you need named arguments to improve the readability of the call to a method, that method is probably doing too much and should be refactored. The exception is when calling a method of some code base you don't control that has a `bool` parameter.
