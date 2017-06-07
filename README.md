@@ -91,7 +91,7 @@ Within each of these groups order by access: `public, internal, protected intern
 
 ### Miscellaneous Guideline
 
-TBD.
+1. **DO** apply a single space before single line comments ([StyleCop](http://stylecop.soyuz5.com/SA1005.html): `// A single-line comment.`).
 
 ## Unit Tests
 
