@@ -73,7 +73,7 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **DO** use using statements instead of fully qualified type names. If you need to prevent name clashing, use a `using` directive to assign an alias.
 1. **DO** prefer single (conditional) assignments instead of if-else statements.
 1. **DO** use `.Any()` instead of `.Count()` when feasible.
-1. **DO** implement classes or interfaces with a single responsibility. If you can't assign a single design pattern to a class, changes are that it is doing more than one thing.
+1. **DO** implement classes or interfaces with a single responsibility. If you can't assign a single design pattern to a class, chances are that it is doing more than one thing.
 1. **DO** provide at least one type that is an implementation of an interface.
 1. **DO** use an interface instead of a base class to support multiple implementations. 
 1. **DO** implement methods with a single responsibility.
