@@ -59,6 +59,7 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **DO** use *camelCasing* for parameter names (`ioStream`).
 1. **DO** group extension methods in a class suffixed with *Extensions*.
 1. **DO** post-fix asynchronous methods with `Async` or `TaskAsync`. The general convention for methods that return a `Task` or `Task<TResult>` is to post-fix them with `Async`.
+1. **DO** provide a meaningful and rich name to methods and classes. This can be tricky.
 1. **DO NOT** use abbreviations. For example, use `OnButtonClick` instead of `OnBtnClick`.
 
 ### Design Guidelines
@@ -88,14 +89,22 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **AVOID** using named arguments. If you need named arguments to improve the readability of the call to a method, that method is probably doing too much and should be refactored. The exception is when calling a method of some code base you don't control that has a `bool` parameter.
 1. **AVOID** code duplication. If the code is used in more than one place, it should probably be extracted to a common place.
 
+### Miscellaneous Guideline
+
+TBD.
+
+## Unit Tests
+
+TBD.
 
 ## Code Review Checklist
 
-- [ ] **DOES** it follow [Pull Request](#pull-requests) standards.
-- [ ] **DOES** it follow [Commit Message's](#commit-messages) convention.
-- [ ] **DOES** the implementation cover the TFS acceptance criteria or fixes the issue.
-- [ ] **DOES** the code is compliant with security tools (such as Fortify).
-- [ ] **DOES** it follow [C# Coding Style](#c-coding-style) guidelines.
+- [ ] **DO** ensure it follows [Pull Request](#pull-requests) standards.
+- [ ] **DO** ensure the implementation covers the TFS acceptance criteria or fixes the issue.
+- [ ] **DO** verify if it follows [Commit Message's](#commit-messages) convention.
+- [ ] **DO** verify if the code is covered by appropriate [Unit Tests](#unit-tests).
+- [ ] **DO** ensure the code is compliant with security tools (such as Fortify).
+- [ ] **DO** ensure it follows [C# Coding Style](#c-coding-style) guidelines.
 
 ### How to not review
 - **DO NOT** get emotional.
