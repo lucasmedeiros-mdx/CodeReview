@@ -9,3 +9,22 @@
 - **DO NOT** mix independent, unrelated changes in one PR. Separate real product/test code changes from larger code formatting/dead code removal changes. Separate unrelated fixes into separate PRs, especially if they are in different assemblies.
 
 Based on [.NET Core Contributing Guide](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/contributing.md)
+
+## Commit Messages
+
+Please format commit messages as follows (based on A Note About Git Commit Messages):
+
+```
+Summarize change in 50 characters or less
+
+Provide more detail after the first line. Leave one blank line below the
+summary and wrap all lines at 72 characters or less.
+
+If the change fixes an issue, leave another blank line after the final
+paragraph and indicate which issue is fixed in the specific format
+below.
+
+Fix #42
+```
+
+Also do your best to factor commits appropriately, not too large with unrelated things in the same commit, and not too small with the same small change applied N times in N different commits.
