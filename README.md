@@ -49,6 +49,7 @@ The general rule to follow is "use Visual Studio defaults".
    1. Delegates / Events
    1. Properties
    1. Methods
+
 Within each of these groups order by access: `public, internal, protected internal, protected, private`. Within each of the    access groups, order by `static`, then `non-static`.
 
 ### Naming Guidelines
