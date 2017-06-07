@@ -67,7 +67,6 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **DO** use `nameof(...)` instead of `"..."` whenever possible and relevant.
 1. **DO** use the `var` when the variable type can be implied (`var name = "Lucas"` instead of `string name = "Lucas"` and `var names = new List<string>()` instead of `List<string> names = new List<string>()`).
 1. **DO** ensure that each type is a well-defined set of related members, not just a random collection of unrelated functionality.
-1. **DO** provide at least one type that is an implementation of an interface.
 1. **DO** implement methods with a single responsibility.
 1. **DO** return an `ICollection<T>` or `IReadOnlyCollection<T>` instead of a concrete collection class.
 1. **DO** define parameters as specific as possible. If your member needs a specific piece of data, define the parameters as specific as that and don't take a container object instead.
@@ -76,6 +75,7 @@ Within each of these groups order by access: `public, internal, protected intern
 1. **DO** prefer single (conditional) assignments instead of if-else statements.
 1. **DO** use `.Any()` instead of `.Count()` when feasible.
 1. **DO** implement classes or interfaces with a single responsibility. If you can't assign a single design pattern to a class, changes are that it is doing more than one thing.
+1. **DO** provide at least one type that is an implementation of an interface.
 1. **DO** use an interface instead of a base class to support multiple implementations. 
 1. **DO NOT** use this. unless absolutely necessary.
 1. **DO NOT** use marker interfaces (interfaces with no members). If you need to mark a class as having a specific characteristic (marker), in general, use a custom attribute rather than an interface.
