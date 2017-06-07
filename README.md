@@ -44,3 +44,5 @@ The general rule to follow is "use Visual Studio defaults".
 1. **DO** use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`) for both type references as well as method calls (i.e. `int.Parse` instead of `Int32.Parse`)
 1. **DO** use `nameof(...)` instead of `"..."` whenever possible and relevant.
 1. **DO** use the `var` when the variable type can be implied (`var name = "Lucas"` instead of `string name = "Lucas"` and `var names = new List<string>()` instead of `List<string> names = new List<string>()`).
+1. **DO** use *PascalCasing* for all public member, type, and namespace names consisting of multiple words. A special case is made for two-letter acronyms in which both letters are capitalized: `IOStream`.
+1. **DO** use *camelCasing* for parameter names (`ioStream`).
