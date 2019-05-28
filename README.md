@@ -66,7 +66,6 @@ Within each of these groups order by access: `public, internal, protected intern
 
 1. **DO** use language keywords instead of BCL types (i.e. `int, string, float` instead of `Int32, String, Single`) for both type references as well as method calls (i.e. `int.Parse` instead of `Int32.Parse`)
 1. **DO** use `nameof(...)` instead of `"..."` whenever possible and relevant.
-1. **DO** use the `var` when the variable type can be implied (`var name = "Lucas"` instead of `string name = "Lucas"` and `var names = new List<string>()` instead of `List<string> names = new List<string>()`).
 1. **DO** ensure that each type is a well-defined set of related members, not just a random collection of unrelated functionality.
 1. **DO** return an `ICollection<T>` or `IReadOnlyCollection<T>` instead of a concrete collection class.
 1. **DO** define parameters as specific as possible. If your member needs a specific piece of data, define the parameters as specific as that and don't take a container object instead.
